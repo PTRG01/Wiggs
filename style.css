@@ -39,7 +39,7 @@ body {
 
 }
 
-.topbar {
+.navbar {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -48,25 +48,25 @@ body {
   padding: 5rem 0rem 0 5rem;
 }
 
-.topbar__cont {
+.navbar__cont {
   display: flex;
   margin-left: 16rem;
   width: 78.3rem;
   justify-content: space-between;
 }
 
-.topbar__logo {
+.navbar__logo {
   align-self: flex-start;
 }
 
-.topbar__search {
+.navbar__search {
   display: flex;
   align-items: center;
   font-size: 1.7rem;
   margin-right: 36.2rem;
 }
 
-.topbar__search img {
+.navbar__search img {
   max-width: 2.4rem;
 }
 
@@ -76,7 +76,7 @@ body {
   color: rgb(175, 175, 175);
 }
 
-.topbar__menu {
+.navbar__menu {
   display: flex;
   align-items: center;
 }
@@ -88,11 +88,11 @@ body {
   margin-left: 4.2rem;
 }
 
-.topbar__menu img {
+.navbar__menu img {
   margin-left: 4.2rem;
 }
 
-.topbar__menu :last-child {
+.navbar__menu :last-child {
   margin-left: 2.5rem;
 }
 
@@ -140,6 +140,7 @@ ul {
 
 .sidebar__help img {
   max-width: 4.7rem;
+  height: auto;
 }
 
 .help__text {
@@ -193,10 +194,21 @@ ul {
   z-index: 1;
 }
 
-.grid__img2::after {
+.grid__row-cont {
+  display: flex;
+}
+
+.grid__image-cont {
+  position: relative;
+}
+
+.grid__image-cont::after {
   content: "";
   background-image: url("img/heart.png");
   width: 38px;
   height: 38px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
   /* z-index: 3; */
 }
